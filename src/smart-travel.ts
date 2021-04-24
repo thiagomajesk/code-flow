@@ -6,7 +6,7 @@ import { nextMarkPositionUp, nextMarkPositionDown } from './line-mark'
  * @param textEditor A VS Code TextEditor
  * @param select If text should be selected when moving or not
  */
-export function smartTravelUp(textEditor: vscode.TextEditor, select : boolean): void {
+export function smartTravelUp(textEditor: vscode.TextEditor, select: boolean): void {
   const anchor = textEditor.selection.anchor
 
   let newPosition = nextMarkPositionUp(textEditor)
@@ -22,7 +22,7 @@ export function smartTravelUp(textEditor: vscode.TextEditor, select : boolean): 
  * @param textEditor A VS Code TextEditor
  * @param select If text should be selected when moving or not
  */
-export function smartTravelDown(textEditor: vscode.TextEditor, select : boolean): void {
+export function smartTravelDown(textEditor: vscode.TextEditor, select: boolean): void {
   const anchor = textEditor.selection.anchor
 
   let newPosition = nextMarkPositionDown(textEditor)
