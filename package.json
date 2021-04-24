@@ -1,45 +1,82 @@
 {
-	"name": "code-flow",
-	"displayName": "code-flow",
-	"description": "Visual Studio Code Extension For Productivity Junkies",
-	"version": "0.0.1",
-	"engines": {
-		"vscode": "^1.55.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:code-flow.helloWorld"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "code-flow.helloWorld",
-				"title": "Hello World"
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile && npm run lint",
-		"lint": "eslint src --ext ts",
-		"test": "node ./out/test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/vscode": "^1.55.0",
-		"@types/glob": "^7.1.3",
-		"@types/mocha": "^8.0.4",
-		"@types/node": "^12.11.7",
-		"eslint": "^7.19.0",
-		"@typescript-eslint/eslint-plugin": "^4.14.1",
-		"@typescript-eslint/parser": "^4.14.1",
-		"glob": "^7.1.6",
-		"mocha": "^8.2.1",
-		"typescript": "^4.1.3",
-		"vscode-test": "^1.5.0"
-	}
+  "name": "code-flow",
+  "displayName": "code-flow",
+  "description": "Visual Studio Code Extension For Productivity Junkies",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:code-flow.smartTravelUp",
+    "onCommand:code-flow.smartTravelDown",
+    "onCommand:code-flow.smartSelectUp",
+    "onCommand:code-flow.smartSelectDown"
+  ],
+  "main": "./out/src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "code-flow.smartTravelUp",
+        "title": "Code Flow: Smart Travel Up"
+      },
+      {
+        "command": "code-flow.smartTravelDown",
+        "title": "Code Flow: Smart Travel Down"
+      },
+      {
+        "command": "code-flow.smartSelectUp",
+        "title": "Code Flow: Smart Select Up"
+      },
+      {
+        "command": "code-flow.smartSelectDown",
+        "title": "Code Flow: Smart Select Down"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "code-flow.smartTravelUp",
+        "key": "ctrl+up",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "code-flow.smartTravelDown",
+        "key": "ctrl+down",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "code-flow.smartSelectUp",
+        "key": "ctrl+shift+up",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "code-flow.smartSelectDown",
+        "key": "ctrl+shift+down",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.55.0",
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^12.11.7",
+    "eslint": "^7.19.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
+    "glob": "^7.1.6",
+    "mocha": "^8.2.1",
+    "typescript": "^4.1.3",
+    "vscode-test": "^1.5.0"
+  }
 }

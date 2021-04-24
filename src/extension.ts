@@ -1,27 +1,23 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-import * as vscode from 'vscode';
+import * as vscode from 'vscode'
+
+import { smartTravelUp, smartTravelDown } from './smart-travel'
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
 
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "code-flow" is now active!');
+  const commands = [
+    // Smart Travel Commands
+    vscode.commands.registerTextEditorCommand('code-flow.smartTravelUp', (textEditor: vscode.TextEditor) => smartTravelUp(textEditor, false)),
+    vscode.commands.registerTextEditorCommand('code-flow.smartTravelDown', (textEditor: vscode.TextEditor) => smartTravelDown(textEditor, false)),
+    vscode.commands.registerTextEditorCommand('code-flow.smartSelectUp', (textEditor: vscode.TextEditor) => smartTravelUp(textEditor, true)),
+    vscode.commands.registerTextEditorCommand('code-flow.smartSelectDown', (textEditor: vscode.TextEditor) => smartTravelDown(textEditor, true))
+  ]
 
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('code-flow.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from code-flow!');
-	});
-
-	context.subscriptions.push(disposable);
+  context.subscriptions.push(...commands)
 }
 
 // this method is called when your extension is deactivated
-export function deactivate() {}
+export function deactivate() { }
