@@ -56,7 +56,22 @@
         "key": "ctrl+shift+down",
         "when": "editorTextFocus"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Code Flow Configuration",
+      "type": "object",
+      "properties": {
+        "code-flow.languageMarks": {
+          "type": "object",
+          "description": "Language Marks Definition",
+          "default": {
+            "typescript": [
+              "^(switch|if|else|var|module|public|private|enum|export|for|while|return|function|try|catch|return|yield|const)"
+            ]
+          }
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",

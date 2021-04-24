@@ -1,6 +1,8 @@
 import * as vscode from 'vscode'
 import { nextMarkPositionUp, nextMarkPositionDown } from './line-mark'
 
+
+
 /**
  * Travels to the next relevant line above the cursor.
  * @param textEditor A VS Code TextEditor

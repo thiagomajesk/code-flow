@@ -1,25 +1,22 @@
 import * as vscode from 'vscode'
 import { lineSearch } from './utils/line-search'
+import parseRegExp from './utils/regexp-parser'
 
 /**
- * Marks what can be considered an 'relevant' line to travel.
+ * Returns the language marks config for the current language id.
+ * @param textEditor A VS Code TextEditor
+ * @returns The configured marks or default mark that only catches word characters.
+ * @description Marks are used to define what can be considered an 'relevant' line to travel to.
  * Use positive lookbehind to jump to the main expression discard previous content.
  * Example: Occurrences of as after imports only: `/(?<=^import.*)as/`
  */
-const marks = [
-  // Javascrip Marks Example
-  // /(?<=^import.*)as/,
-  /^import/,
-  /^export/,
-  /^function/,
-  /^const/,
-  /^let/,
-  /^var/,
-  /^while/,
-  /^if/,
-  /^for/,
-  /^return/
-]
+function getLanguageMarks(document: vscode.TextDocument): RegExp[] {
+  const config = vscode.workspace.getConfiguration('code-flow.languageMarks')
+  const currentLanguage = document.languageId
+  const languageConfig = config.get<string[]>(currentLanguage, [])
+  const marks = parseRegExp(languageConfig)
+  return marks.length ? marks : [/^\w+/]
+}
 
 /**
  * Searchs for the first mark occurence on the line.
@@ -28,6 +25,8 @@ const marks = [
  * @returns Index of the first occurence or -1 if not was found.
  */
 function indexOfMark(line: vscode.TextLine, document: vscode.TextDocument): number {
+  const marks = getLanguageMarks(document)
+
   if (line.isEmptyOrWhitespace) return -1
 
   let validMatches = marks.map(m => lineSearch(line, m)).filter(i => i >= 0)
