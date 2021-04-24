@@ -73,6 +73,15 @@
       }
     }
   },
+  "extensionDependencies": [
+    "ms-vscode-remote.remote-wsl",
+    "sleistner.vscode-fileutils",
+    "kylqin.fuzzy-goto-line",
+    "jakubszalaty.go-to-word",
+    "jasonlhy.hungry-delete",
+    "tyriar.sort-lines",
+    "qcz.text-power-tools"
+  ],
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
