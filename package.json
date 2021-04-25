@@ -6,6 +6,7 @@
   "license": "AGPL-3.0",
   "version": "0.0.1",
   "icon": "static/code-flow-logo.png",
+  "publisher": "tmg",
   "homepage": "https://github.com/thiagomajesk/code-flow",
   "repository": {
     "type": "git",
