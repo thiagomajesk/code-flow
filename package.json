@@ -37,6 +37,249 @@
     ],
     "keybindings": [
       {
+        "key": "ctrl+k ctrl+e",
+        "command": "workbench.view.explorer"
+      },
+      {
+        "key": "ctrl+k ctrl+f",
+        "command": "workbench.view.search"
+      },
+      {
+        "key": "ctrl+k ctrl+g",
+        "command": "workbench.view.scm"
+      },
+      {
+        "key": "ctrl+k ctrl+d",
+        "command": "workbench.view.debug"
+      },
+      {
+        "key": "ctrl+k ctrl+x",
+        "command": "workbench.extensions.action.showInstalledExtensions"
+      },
+      {
+        "key": "ctrl+k ctrl+s",
+        "command": "workbench.action.toggleSidebarVisibility"
+      },
+      {
+        "key": "ctrl+k ctrl+r",
+        "command": "targetsWsl.focus"
+      },
+      {
+        "key": "ctrl+k ctrl+b",
+        "command": "workbench.action.focusActiveEditorGroup"
+      },
+      {
+        "key": "ctrl+k ctrl+t",
+        "command": "workbench.action.terminal.toggleTerminal"
+      },
+      {
+        "key": "ctrl+k ctrl+m",
+        "command": "editor.action.toggleMinimap"
+      },
+      {
+        "key": "ctrl+d",
+        "command": "fileutils.duplicateFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+      },
+      {
+        "key": "ctrl+n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+      },
+      {
+        "key": "ctrl+shift+n",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+      },
+      {
+        "key": "ctrl+alt+n",
+        "command": "fileutils.newFileAtRoot",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+      },
+      {
+        "key": "ctrl+shift+alt+n",
+        "command": "fileutils.newFolderAtRoot",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+      },
+      {
+        "key": "ctrl+b ctrl+w",
+        "command": "workbench.action.joinAllGroups",
+        "when": "editorFocus"
+      },
+      {
+        "key": "ctrl+b ctrl+n",
+        "command": "workbench.action.splitEditor",
+        "when": "editorFocus"
+      },
+      {
+        "key": "ctrl+b ctrl+p",
+        "command": "markdown.showPreviewToSide",
+        "when": "editorFocus"
+      },
+      {
+        "key": "ctrl+b ctrl+r",
+        "command": "workbench.action.reopenClosedEditor",
+        "when": "editorFocus"
+      },
+      {
+        "key": "ctrl+b ctrl+oem_plus",
+        "command": "workbench.action.splitEditorOrthogonal",
+        "when": "editorFocus"
+      },
+      {
+        "key": "ctrl+b ctrl+oem_minus",
+        "command": "workbench.action.splitEditorDown",
+        "when": "editorFocus"
+      },
+      {
+        "key": "ctrl+b right",
+        "command": "workbench.action.navigateRight",
+        "when": "editorFocus"
+      },
+      {
+        "key": "ctrl+b ctrl+right",
+        "command": "workbench.action.moveEditorToRightGroup",
+        "when": "editorFocus"
+      },
+      {
+        "key": "ctrl+b down",
+        "command": "workbench.action.navigateDown",
+        "when": "editorFocus"
+      },
+      {
+        "key": "ctrl+b ctrl+down",
+        "command": "workbench.action.moveEditorToBellowGroup",
+        "when": "editorFocus"
+      },
+      {
+        "key": "ctrl+b left",
+        "command": "workbench.action.navigateLeft",
+        "when": "editorFocus"
+      },
+      {
+        "key": "ctrl+b ctrl+left",
+        "command": "workbench.action.moveEditorToLeftGroup",
+        "when": "editorFocus"
+      },
+      {
+        "key": "ctrl+b up",
+        "command": "workbench.action.navigateUp",
+        "when": "editorFocus"
+      },
+      {
+        "key": "ctrl+b ctrl+up",
+        "command": "workbench.action.moveEditorToAboveGroup",
+        "when": "editorFocus"
+      },
+      {
+        "key": "ctrl+b ctrl+a",
+        "command": "workbench.action.showAllEditors"
+      },
+      {
+        "key": "ctrl+b ctrl+g",
+        "command": "workbench.action.showEditorsInActiveGroup"
+      },
+      {
+        "key": "ctrl+b ctrl+n",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
+      },
+      {
+        "key": "ctrl+b right",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+      },
+      {
+        "key": "ctrl+b left",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus"
+      },
+      {
+        "key": "ctrl+b ctrl+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+      },
+      {
+        "key": "ctrl+shift+oem_6",
+        "command": "editor.fold",
+        "when": "editorFocus"
+      },
+      {
+        "key": "ctrl+shift+oem_5",
+        "command": "editor.unfold",
+        "when": "editorFocus"
+      },
+      {
+        "key": "ctrl+oem_6",
+        "command": "editor.action.indentLines",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "ctrl+oem_5",
+        "command": "editor.action.outdentLines",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "ctrl+j",
+        "command": "editor.action.joinLines",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "alt+t u",
+        "command": "editor.action.transformToUppercase",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "alt+t l",
+        "command": "editor.action.transformToLowercase",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "alt+t t",
+        "command": "editor.action.transformToTitlecase",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "alt+t c",
+        "command": "textPowerTools.changeCaseToCamelCase",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "alt+t c",
+        "command": "textPowerTools.changeCaseToCamelCase",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "alt+t p",
+        "command": "textPowerTools.changeCaseToPascalCase",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "alt+t s",
+        "command": "editor.action.transformToSnakecase",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "alt+t d",
+        "command": "textPowerTools.changeCaseToDashCase",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+shift+d",
+        "command": "deleteInsideWord",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "alt+right",
+        "command": "editor.action.moveCarretRightAction",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "alt+left",
+        "command": "editor.action.moveCarretLeftAction",
+        "when": "editorTextFocus"
+      },
+      {
         "command": "code-flow.smartTravelUp",
         "key": "ctrl+up",
         "when": "editorTextFocus"
