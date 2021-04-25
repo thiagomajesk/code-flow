@@ -4,7 +4,7 @@
   "description": "Visual Studio Code Extension For Productivity Junkies",
   "preview": true,
   "license": "AGPL-3.0",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "icon": "static/code-flow-logo.png",
   "publisher": "tmg",
   "homepage": "https://github.com/thiagomajesk/code-flow",
