@@ -21,12 +21,7 @@
     "Other"
   ],
   "keywords": ["productivity", "vim-like", "emacs-like", "shortcuts", "awesome"],
-  "activationEvents": [
-    "onCommand:code-flow.smartTravelUp",
-    "onCommand:code-flow.smartTravelDown",
-    "onCommand:code-flow.smartSelectUp",
-    "onCommand:code-flow.smartSelectDown"
-  ],
+  "activationEvents": ["*"],
   "main": "./out/src/extension.js",
   "contributes": {
     "commands": [
