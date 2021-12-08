@@ -247,31 +247,6 @@
         "when": "editorTextFocus"
       },
       {
-        "key": "alt+t c",
-        "command": "textPowerTools.changeCaseToCamelCase",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "alt+t c",
-        "command": "textPowerTools.changeCaseToCamelCase",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "alt+t p",
-        "command": "textPowerTools.changeCaseToPascalCase",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "alt+t s",
-        "command": "editor.action.transformToSnakecase",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "alt+t d",
-        "command": "textPowerTools.changeCaseToDashCase",
-        "when": "editorTextFocus"
-      },
-      {
         "key": "ctrl+shift+d",
         "command": "deleteInsideWord",
         "when": "editorTextFocus"
@@ -323,14 +298,6 @@
       }
     }
   },
-  "extensionDependencies": [
-    "sleistner.vscode-fileutils",
-    "kylqin.fuzzy-goto-line",
-    "jakubszalaty.go-to-word",
-    "jasonlhy.hungry-delete",
-    "tyriar.sort-lines",
-    "qcz.text-power-tools"
-  ],
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
