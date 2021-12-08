@@ -19,19 +19,16 @@ PS.: This is generally more flexible than using VS Code symbols because you don'
 ## Shortcuts
 
 The shortcuts here presented use some kind a mnemonic device to improve command usage and discovery.
-Although the main goal is to provide a more productive shortcut scheme, the extension tries to stay as close as possible to the overall editing experience in VS Code, trying to not drastically change important editing commands...   
-For instance, the extension avoids poluting the global scope (<kbd>Ctrl</kbd>, <kbd>Alt</kbd> & <kbd>Shift</kbd>) or rebind existant commands to something else. For the most part we try to stay consistant with the current editing experience but expanding a little bit more.
+Although the main goal is to provide a more productive shortcut scheme, the extension tries to stay as close as possible to the overall editing experience in VS Code, trying to not drastically change important editing commands... For instance, the extension avoids poluting the global scope (<kbd>Ctrl</kbd>, <kbd>Alt</kbd> & <kbd>Shift</kbd>) or rebind existant commands to something else. For the most part we try to stay consistant with the current editing experience but expanding a little bit more.
 
 Most of the new commands/ chords will be located in a specific scope like:
 
 - <kbd>K</kbd> for Wor**k**bench
 - <kbd>B</kbd> for **B**uffer (Text Editor)
 
-> For some of this shortcuts Code Flow will rely on thirdparty extension to be installed. They are not much, but they are awesome 😎.
-
 ### Workbench Navigation
 
-|                                          |                                         |
+| Shortcut                                 | Command                                 |
 |------------------------------------------|-----------------------------------------|
 | <kbd>Ctrl + K</kbd> <kbd>Ctrl + E</kbd>  | Open/ Toggle **E**xplorer               |
 | <kbd>Ctrl + K</kbd> <kbd>Ctrl + F</kbd>  | Open/ Toggle **F**ind (Search)          |
@@ -45,21 +42,9 @@ Most of the new commands/ chords will be located in a specific scope like:
 
 ---
 
-### File Explorer Commands
-
-|                                    |                                     |
-|------------------------------------|-------------------------------------|
-| <kbd>Ctrl + D</kbd>                | **D**uplicate File                  |
-| <kbd>Ctrl + N</kbd>                | **N**ew File                        |
-| <kbd>Ctrl + Shift + N</kbd>        | **N**ew Folder                      |
-| <kbd>Ctrl + Alt + N</kbd>          | **N**ew File from project root      |
-| <kbd>Ctrl + Shift + Alt + N</kbd>  | **N**ew Folder from project root    |
-
----
-
 ### Buffer Commands
 
-|                                              |                                     |
+| Shortcut                                     | Command                             |
 |----------------------------------------------|-------------------------------------|
 | <kbd>Ctrl + B</kbd> <kbd>Ctrl + W</kbd>      | Close Buffer                        |
 | <kbd>Ctrl + B</kbd> <kbd>Ctrl + N</kbd>      | Split (**N**ew) Buffer              |
@@ -82,7 +67,7 @@ Most of the new commands/ chords will be located in a specific scope like:
 
 ### Content Manipulation
 
-|                                  |                                     |
+| Shortcut                         | Command                             |
 |----------------------------------|-------------------------------------|
 | <kbd>Ctrl + [</kbd>              | Indent                              |
 | <kbd>Ctrl + ]</kbd>              | Deindent                            |
@@ -91,15 +76,12 @@ Most of the new commands/ chords will be located in a specific scope like:
 | <kbd>Alt + T</kbd> <kbd>U</kbd>  | Transform To **U**ppercase          |
 | <kbd>Alt + T</kbd> <kbd>L</kbd>  | Transform To **L**owercase          |
 | <kbd>Alt + T</kbd> <kbd>T</kbd>  | Transform To **T**itlecase          |
-| <kbd>Alt + T</kbd> <kbd>C</kbd>  | Transform To **C**amelCase          |
-| <kbd>Alt + T</kbd> <kbd>P</kbd>  | Transform To **P**ascalCase         |
 | <kbd>Alt + T</kbd> <kbd>S</kbd>  | Transform To **S**nakeCase          |
-| <kbd>Alt + T</kbd> <kbd>D</kbd>  | Transform To **D**ashCase           |
 | <kbd>Alt + Shift + D</kbd>       | **D**elete Word                     |
 
 ### Movement
 
-|                              |                                     |
+| Shortcut                     | Command                             |
 |------------------------------|-------------------------------------|
 | <kbd>Ctrl + Up</kbd>         | Smart Travel Up                     |
 | <kbd>Ctrl + Down</kbd>       | Smart Travel Down                   |
