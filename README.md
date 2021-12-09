@@ -6,7 +6,8 @@
 
 **A VS Code Extension for Productivity Junkies**
 
-This extension aims to improve the default keybindings of VS Code with a different, keyboard-centric workflow.
+Code Flow is an extension that aims to improve a default set of keybindings with a keyboard-centric workflow.  
+The shortcuts here were elaborated to provide a better editing experience with mnemonics and consistent conventions.   
 
 ## Features
 
@@ -14,31 +15,34 @@ This extension aims to improve the default keybindings of VS Code with a differe
 
 Navigate vertically in your code using <kbd>Ctrl + Up</kbd> and <kbd>Ctrl + Down</kbd> by skipping non-relevant lines (like punctuation or whitespace only). The criteria to decide if a line is considered relevant or not can be configured per language using the `code-flow.languageMarks` setting. If the extension does not found a compatible language configured, the default behaviour is to jump to lines where there are word characters: `/^\w+/`.
 
-PS.: This is generally more flexible than using VS Code symbols because you don't need an external provider and you can configure your own rules.
+> PS.: This is generally more flexible than using VS Code symbols because you don't need an external provider and you can configure your own rules.
 
 ## Shortcuts
 
 The shortcuts here presented use some kind a mnemonic device to improve command usage and discovery.
-Although the main goal is to provide a more productive shortcut scheme, the extension tries to stay as close as possible to the overall editing experience in VS Code, trying to not drastically change important editing commands... For instance, the extension avoids poluting the global scope (<kbd>Ctrl</kbd>, <kbd>Alt</kbd> & <kbd>Shift</kbd>) or rebind existant commands to something else. For the most part we try to stay consistant with the current editing experience but expanding a little bit more.
+Although the main goal is to provide a more productive shortcut scheme, the extension tries to stay as close as possible to the overall editing experience in VS Code, trying to not drastically change important editing commands... For instance, we avoid poluting commands in the global scope (<kbd>Ctrl</kbd>, <kbd>Alt</kbd> & <kbd>Shift</kbd>) and the rebinds that are done are thought out to improve on the standard shortcuts. For the most part we try to stay consistant with the current editing experience but expanding a little bit more on top of it.
 
 Most of the new commands/ chords will be located in a specific scope like:
 
-- <kbd>K</kbd> for Wor**k**bench
-- <kbd>B</kbd> for **B**uffer (Text Editor)
+- <kbd>K</kbd> as in - Wor**k**bench navigation
+- <kbd>B</kbd> as in - **B**uffer (text editor) and panels
+- <kbd>T</kbd> as in - **T**ext **T**ransformations
+- <kbd>L</kbd> as in - **L**ine movement and editing
+- <kbd>G</kbd> as in - **G**o somewhere in the file
 
 ### Workbench Navigation
 
-| Shortcut                                 | Command                                 |
-|------------------------------------------|-----------------------------------------|
-| <kbd>Ctrl + K</kbd> <kbd>Ctrl + E</kbd>  | Open/ Toggle **E**xplorer               |
-| <kbd>Ctrl + K</kbd> <kbd>Ctrl + F</kbd>  | Open/ Toggle **F**ind (Search)          |
-| <kbd>Ctrl + K</kbd> <kbd>Ctrl + D</kbd>  | Open/ Toggle **D**ebugger               |
-| <kbd>Ctrl + K</kbd> <kbd>Ctrl + G</kbd>  | Open/ Toggle **G**it                    |
-| <kbd>Ctrl + K</kbd> <kbd>Ctrl + S</kbd>  | Open / Toggle **S**idebar               |
-| <kbd>Ctrl + K</kbd> <kbd>Ctrl + R</kbd>  | Open / Toggle **R**emote Explorer       |
-| <kbd>Ctrl + K</kbd> <kbd>Ctrl + B</kbd>  | Open / Toggle **B**uffer (Text Editor)  |
-| <kbd>Ctrl + K</kbd> <kbd>Ctrl + T</kbd>  | Open / Toggle **T**erminal              |
-| <kbd>Ctrl + K</kbd> <kbd>Ctrl + M</kbd>  | Open / Toggle **M**inimap               |
+| Shortcut                                 | Command                          |
+|------------------------------------------|----------------------------------|
+| <kbd>Ctrl + K</kbd> <kbd>Ctrl + E</kbd>  | Toggle **E**xplorer              |
+| <kbd>Ctrl + K</kbd> <kbd>Ctrl + F</kbd>  | Toggle **F**ind (Search)         |
+| <kbd>Ctrl + K</kbd> <kbd>Ctrl + D</kbd>  | Toggle **D**ebugger              |
+| <kbd>Ctrl + K</kbd> <kbd>Ctrl + G</kbd>  | Toggle **G**it                   |
+| <kbd>Ctrl + K</kbd> <kbd>Ctrl + S</kbd>  | Toggle **S**idebar               |
+| <kbd>Ctrl + K</kbd> <kbd>Ctrl + R</kbd>  | Toggle **R**emote Explorer       |
+| <kbd>Ctrl + K</kbd> <kbd>Ctrl + B</kbd>  | Toggle **B**uffer (Text Editor)  |
+| <kbd>Ctrl + K</kbd> <kbd>Ctrl + T</kbd>  | Toggle **T**erminal              |
+| <kbd>Ctrl + K</kbd> <kbd>Ctrl + M</kbd>  | Toggle **M**inimap               |
 
 ---
 
@@ -47,7 +51,7 @@ Most of the new commands/ chords will be located in a specific scope like:
 | Shortcut                        | Command                                 |
 |---------------------------------|-----------------------------------------|
 | <kbd>Ctrl + N</kbd>             | **N**ew File                            |
-| <kbd>Ctrl + Shift + N</kbd>     |  **N**ew Folder                         |
+| <kbd>Ctrl + Shift + N</kbd>     | **N**ew Folder                          |
 
 ### Buffer Commands
 
@@ -90,14 +94,14 @@ Most of the new commands/ chords will be located in a specific scope like:
 
 | Shortcut                                 | Command                                   |
 |------------------------------------------|-------------------------------------------|
-| <kbd>Ctrl + L</kbd> <kbd>E</kbd>         | Move to **E**nd of Line                   |
-| <kbd>Ctrl + L</kbd> <kbd>Shift + E</kbd> | Select to **E**nd of Line                 |
-| <kbd>Ctrl + L</kbd> <kbd>S</kbd>         | Move to **S**tart of Line                 |
-| <kbd>Ctrl + L</kbd> <kbd>Shift + S</kbd> | Select to **S**tart of Line               |
-| <kbd>Ctrl + L</kbd> <kbd>L</kbd>         | Select the Whole Line                     |
-| <kbd>Ctrl + L</kbd> <kbd>D</kbd>         | **D**elete the Line                       |
-| <kbd>Ctrl + L</kbd> <kbd>Delete</kbd>    | Delete everything to the right            |
-| <kbd>Ctrl + L</kbd> <kbd>Backspace</kbd> | Delete everything to the left             |
+| <kbd>Ctrl + L</kbd> <kbd>E</kbd>         | Move To **E**nd Of Line                   |
+| <kbd>Ctrl + L</kbd> <kbd>Shift + E</kbd> | Select To **E**nd Of Line                 |
+| <kbd>Ctrl + L</kbd> <kbd>S</kbd>         | Move To **S**tart Of Line                 |
+| <kbd>Ctrl + L</kbd> <kbd>Shift + S</kbd> | Select To **S**tart Of Line               |
+| <kbd>Ctrl + L</kbd> <kbd>L</kbd>         | Select The Whole Line                     |
+| <kbd>Ctrl + L</kbd> <kbd>D</kbd>         | **D**elete The Line                       |
+| <kbd>Ctrl + L</kbd> <kbd>Delete</kbd>    | Delete everything To The Right            |
+| <kbd>Ctrl + L</kbd> <kbd>Backspace</kbd> | Delete everything To The Left             |
 
 ### Movement
 
@@ -109,15 +113,15 @@ Most of the new commands/ chords will be located in a specific scope like:
 | <kbd>Alt + Left</kbd>                       | Deslocate Word Left                    |
 | <kbd>Alt + Left</kbd>                       | Deslocate Word Left                    |
 | <kbd>Ctrl + G</kbd> <kbd>G</kbd>            | Go To Line Number                      |
-| <kbd>Ctrl + G</kbd> <kbd>L</kbd>            | Go To **L**ast editing location        |
+| <kbd>Ctrl + G</kbd> <kbd>L</kbd>            | Go To **L**ast Editing Location        |
 | <kbd>Ctrl + G</kbd> <kbd>B</kbd>            | Go To **B**racket                      |
 | <kbd>Ctrl + G</kbd> <kbd>Shift + B</kbd>    | Select To **B**racket                  |
-| <kbd>Ctrl + G</kbd> <kbd>S</kbd>            | Go **S**tart of file                   |
-| <kbd>Ctrl + G</kbd> <kbd>E</kbd>            | Go to **E**nd of file                  |
-| <kbd>Ctrl + G</kbd> <kbd>Up</kbd>           | Go Up to the visible screen area       |
-| <kbd>Ctrl + G</kbd> <kbd>Shift + Up</kbd>   | Select Up to the visible screen area   |
-| <kbd>Ctrl + G</kbd> <kbd>Down</kbd>         | Go Down to the visible screen area     |
-| <kbd>Ctrl + G</kbd> <kbd>Shift + Down</kbd> | Select Down to the visible screen area |
+| <kbd>Ctrl + G</kbd> <kbd>S</kbd>            | Go **S**tart Of File                   |
+| <kbd>Ctrl + G</kbd> <kbd>E</kbd>            | Go To **E**nd Of File                  |
+| <kbd>Ctrl + G</kbd> <kbd>Up</kbd>           | Go Up To The Visible Screen Area       |
+| <kbd>Ctrl + G</kbd> <kbd>Shift + Up</kbd>   | Select Up To The Visible Screen Area   |
+| <kbd>Ctrl + G</kbd> <kbd>Down</kbd>         | Go Down To The Visible Screen Area     |
+| <kbd>Ctrl + G</kbd> <kbd>Shift + Down</kbd> | Select Down To The Visible Screen Area |
 
 
 ### Future Ideas
