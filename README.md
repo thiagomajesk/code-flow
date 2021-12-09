@@ -86,21 +86,43 @@ Most of the new commands/ chords will be located in a specific scope like:
 | <kbd>Alt + T</kbd> <kbd>S</kbd>  | Transform To **S**nakeCase          |
 | <kbd>Alt + Shift + D</kbd>       | **D**elete Word                     |
 
+## Line Editing
+
+| Shortcut                                 | Command                                   |
+|------------------------------------------|-------------------------------------------|
+| <kbd>Ctrl + L</kbd> <kbd>E</kbd>         | Move to **E**nd of Line                   |
+| <kbd>Ctrl + L</kbd> <kbd>Shift + E</kbd> | Select to **E**nd of Line                 |
+| <kbd>Ctrl + L</kbd> <kbd>S</kbd>         | Move to **S**tart of Line                 |
+| <kbd>Ctrl + L</kbd> <kbd>Shift + S</kbd> | Select to **S**tart of Line               |
+| <kbd>Ctrl + L</kbd> <kbd>L</kbd>         | Select the Whole Line                     |
+| <kbd>Ctrl + L</kbd> <kbd>D</kbd>         | **D**elete the Line                       |
+| <kbd>Ctrl + L</kbd> <kbd>Delete</kbd>    | Delete everything to the right            |
+| <kbd>Ctrl + L</kbd> <kbd>Backspace</kbd> | Delete everything to the left             |
+
 ### Movement
 
-| Shortcut                     | Command                             |
-|------------------------------|-------------------------------------|
-| <kbd>Ctrl + Up</kbd>         | Smart Travel Up                     |
-| <kbd>Ctrl + Down</kbd>       | Smart Travel Down                   |
-| <kbd>Alt + Right</kbd>       | Deslocate Word Right                |
-| <kbd>Alt + Left</kbd>        | Deslocate Word Left                 |
+| Shortcut                                    | Command                                |
+|-------------------------------------------- |--------------------------------------- |
+| <kbd>Ctrl + Up</kbd>                        | Smart Travel Up                        |
+| <kbd>Ctrl + Down</kbd>                      | Smart Travel Down                      |
+| <kbd>Alt + Right</kbd>                      | Deslocate Word Right                   |
+| <kbd>Alt + Left</kbd>                       | Deslocate Word Left                    |
+| <kbd>Alt + Left</kbd>                       | Deslocate Word Left                    |
+| <kbd>Ctrl + G</kbd> <kbd>G</kbd>            | Go To Line Number                      |
+| <kbd>Ctrl + G</kbd> <kbd>L</kbd>            | Go To **L**ast editing location        |
+| <kbd>Ctrl + G</kbd> <kbd>B</kbd>            | Go To **B**racket                      |
+| <kbd>Ctrl + G</kbd> <kbd>Shift + B</kbd>    | Select To **B**racket                  |
+| <kbd>Ctrl + G</kbd> <kbd>S</kbd>            | Go **S**tart of file                   |
+| <kbd>Ctrl + G</kbd> <kbd>E</kbd>            | Go to **E**nd of file                  |
+| <kbd>Ctrl + G</kbd> <kbd>Up</kbd>           | Go Up to the visible screen area       |
+| <kbd>Ctrl + G</kbd> <kbd>Shift + Up</kbd>   | Select Up to the visible screen area   |
+| <kbd>Ctrl + G</kbd> <kbd>Down</kbd>         | Go Down to the visible screen area     |
+| <kbd>Ctrl + G</kbd> <kbd>Shift + Down</kbd> | Select Down to the visible screen area |
 
 
 ### Future Ideas
 
 - <kbd>Ctrl + T</kbd> = Select Until Character (VIM-Like)
-
-- <kbd>Ctrl + G</kbd> <kbd>G</kbd> = Go To Line Number
 - <kbd>Ctrl + G</kbd> <kbd>R</kbd> = Go To Relative Line Number (VIM-Like)
 - <kbd>Ctrl + G</kbd> <kbd>F</kbd> = Go To Line Fuzzy
 - <kbd>Alt + L</kbd> = Delete Line

@@ -265,7 +265,109 @@
         "command": "code-flow.smartSelectDown",
         "key": "ctrl+shift+down",
         "when": "editorTextFocus"
-      }
+      },
+      {
+        "command": "cursorLineEnd",
+        "key": "ctrl+l e",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "cursorLineEndSelect",
+        "key": "ctrl+l shift+e",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "cursorLineStart",
+        "key": "ctrl+l b",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "cursorLineStartSelect",
+        "key": "ctrl+l shift+s",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "expandLineSelection",
+        "key": "ctrl+l l",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "editor.action.deleteLines",
+        "key": "ctrl+l d",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "deleteAllRight",
+        "key": "ctrl+l delete",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "deleteAllLeft",
+        "key": "ctrl+l backspace",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "workbench.action.gotoLine",
+        "key": "ctrl+g g",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "workbench.action.navigateToLastEditLocation",
+        "key": "ctrl+g l",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "editor.action.jumpToBracket",
+        "key": "ctrl+g b",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "editor.action.selectToBracket",
+        "key": "ctrl+g shift+b",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "cursorPageDown",
+        "key": "ctrl+g down",
+        "when": "textInputFocus"
+      },
+      {
+        "command": "cursorPageDownSelect",
+        "key": "ctrl+g shift+down",
+        "when": "textInputFocus"
+      },
+      {
+        "command": "cursorPageUp",
+        "key": "ctrl+g up",
+        "when": "textInputFocus"
+      },
+      {
+        "command": "cursorPageUpSelect",
+        "key": "ctrl+g shift+up",
+        "when": "textInputFocus"
+      },
+      {
+        "command": "cursorEnd",
+        "key": "ctrl+g e",
+        "when": "textInputFocus",
+        "args": {"sticky":false}
+      },
+      {
+        "command": "cursorEndSelect",
+        "key": "ctrl+g shift+e",
+        "when": "textInputFocus",
+        "args": {"sticky":false}
+       },
+       {
+        "command": "cursorHome",
+        "key": "ctrl+g s",
+        "when": "textInputFocus"
+       },
+       {
+        "command": "cursorHome",
+        "key": "ctrl+g shift+s",
+        "when": "textInputFocus"
+       }
     ],
     "configuration": {
       "title": "Code Flow Configuration",
