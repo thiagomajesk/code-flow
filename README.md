@@ -42,6 +42,13 @@ Most of the new commands/ chords will be located in a specific scope like:
 
 ---
 
+### File Explorer Commands
+
+| Shortcut                        | Command                                 |
+|---------------------------------|-----------------------------------------|
+| <kbd>Ctrl + N</kbd>             | **N**ew File                            |
+| <kbd>Ctrl + Shift + N</kbd>     |  **N**ew Folder                         |
+
 ### Buffer Commands
 
 | Shortcut                                     | Command                             |

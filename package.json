@@ -84,11 +84,6 @@
         "command": "editor.action.toggleMinimap"
       },
       {
-        "key": "ctrl+d",
-        "command": "fileutils.duplicateFile",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
-      },
-      {
         "key": "ctrl+n",
         "command": "explorer.newFile",
         "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
@@ -96,16 +91,6 @@
       {
         "key": "ctrl+shift+n",
         "command": "explorer.newFolder",
-        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
-      },
-      {
-        "key": "ctrl+alt+n",
-        "command": "fileutils.newFileAtRoot",
-        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
-      },
-      {
-        "key": "ctrl+shift+alt+n",
-        "command": "fileutils.newFolderAtRoot",
         "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
       },
       {
