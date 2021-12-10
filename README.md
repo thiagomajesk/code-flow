@@ -6,18 +6,9 @@
 
 **A VS Code Extension for Productivity Junkies**
 
-Code Flow is an extension that aims to improve a default set of keybindings with a keyboard-centric workflow.  
-The shortcuts here were elaborated to provide a better editing experience with mnemonics and consistent conventions.   
+Code Flow is an extension that aims to improve a default set of keybindings with a keyboard-centric workflow. The shortcuts here were elaborated to provide a better editing experience with mnemonics and consistent conventions.   
 
-## Features
-
-### Smart Travel
-
-Navigate vertically in your code using <kbd>Ctrl + Up</kbd> and <kbd>Ctrl + Down</kbd> by skipping non-relevant lines (like punctuation or whitespace only). The criteria to decide if a line is considered relevant or not can be configured per language using the `code-flow.languageMarks` setting. If the extension does not found a compatible language configured, the default behaviour is to jump to lines where there are word characters: `/^\w+/`.
-
-> PS.: This is generally more flexible than using VS Code symbols because you don't need an external provider and you can configure your own rules.
-
-## Shortcuts
+# Shortcuts
 
 The shortcuts here presented use some kind a mnemonic device to improve command usage and discovery.
 Although the main goal is to provide a more productive shortcut scheme, the extension tries to stay as close as possible to the overall editing experience in VS Code, trying to not drastically change important editing commands... For instance, we avoid poluting commands in the global scope (<kbd>Ctrl</kbd>, <kbd>Alt</kbd> & <kbd>Shift</kbd>) and the rebinds that are done are thought out to improve on the standard shortcuts. For the most part we try to stay consistant with the current editing experience but expanding a little bit more on top of it.
@@ -30,7 +21,7 @@ Most of the new commands/ chords will be located in a specific scope like:
 - <kbd>L</kbd> as in - **L**ine movement and editing
 - <kbd>G</kbd> as in - **G**o somewhere in the file
 
-### Workbench Navigation
+## Workbench Navigation
 
 | Shortcut                                 | Command                          |
 |------------------------------------------|----------------------------------|
@@ -44,16 +35,14 @@ Most of the new commands/ chords will be located in a specific scope like:
 | <kbd>Ctrl + K</kbd> <kbd>Ctrl + T</kbd>  | Toggle **T**erminal              |
 | <kbd>Ctrl + K</kbd> <kbd>Ctrl + M</kbd>  | Toggle **M**inimap               |
 
----
-
-### File Explorer Commands
+## File Explorer Commands
 
 | Shortcut                        | Command                                 |
 |---------------------------------|-----------------------------------------|
 | <kbd>Ctrl + N</kbd>             | **N**ew File                            |
 | <kbd>Ctrl + Shift + N</kbd>     | **N**ew Folder                          |
 
-### Buffer Commands
+## Buffer Commands
 
 | Shortcut                                     | Command                             |
 |----------------------------------------------|-------------------------------------|
@@ -74,9 +63,7 @@ Most of the new commands/ chords will be located in a specific scope like:
 | <kbd>Ctrl + B</kbd> <kbd>Ctrl + G</kbd>      | Show Editors In Active **G**roup    |
 | <kbd>Ctrl + B</kbd> <kbd>Ctrl + R</kbd>      | **R**eopen Last Closed              |
 
----
-
-### Content Manipulation
+## Content Manipulation
 
 | Shortcut                         | Command                             |
 |----------------------------------|-------------------------------------|
@@ -103,7 +90,7 @@ Most of the new commands/ chords will be located in a specific scope like:
 | <kbd>Ctrl + L</kbd> <kbd>Delete</kbd>    | Delete everything To The Right            |
 | <kbd>Ctrl + L</kbd> <kbd>Backspace</kbd> | Delete everything To The Left             |
 
-### Movement
+## Movement
 
 | Shortcut                                    | Command                                |
 |-------------------------------------------- |--------------------------------------- |
@@ -123,8 +110,19 @@ Most of the new commands/ chords will be located in a specific scope like:
 | <kbd>Ctrl + G</kbd> <kbd>Down</kbd>         | Go Down To The Visible Screen Area     |
 | <kbd>Ctrl + G</kbd> <kbd>Shift + Down</kbd> | Select Down To The Visible Screen Area |
 
+# Custom Features
 
-### Future Ideas
+## Smart Travel
+
+Navigate vertically in your code using <kbd>Ctrl + Up</kbd> and <kbd>Ctrl + Down</kbd> by skipping non-relevant lines (like punctuation or whitespace only). The criteria to decide if a line is considered relevant or not can be configured per language using the `code-flow.languageMarks` setting. If the extension does not found a compatible language configured, the default behaviour is to jump to lines where there are word characters: `/^\w+/`.
+
+> PS.: This is generally more flexible than using VS Code symbols because you don't need an external provider and you can configure your own rules.
+
+## Extensions pairings
+
+- [Code Flea](https://marketplace.visualstudio.com/items?itemName=Richibansoft.codeflea): To speed up even more your code navigation
+
+# Future Ideas
 
 - <kbd>Ctrl + T</kbd> = Select Until Character (VIM-Like)
 - <kbd>Ctrl + G</kbd> <kbd>R</kbd> = Go To Relative Line Number (VIM-Like)
