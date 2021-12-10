@@ -50,7 +50,7 @@ Most of the new commands/ chords will be located in a specific scope like:
 | <kbd>Ctrl + B</kbd> <kbd>Ctrl + N</kbd>      | Split (**N**ew) Buffer              |
 | <kbd>Ctrl + B</kbd> <kbd>Ctrl + P</kbd>      | Open **P**review Buffer             |
 | <kbd>Ctrl + B</kbd> <kbd>Ctrl + -</kbd>      | Split Buffer Horizontaly            |
-| <kbd>Ctrl + B</kbd> <kbd>Ctrl + +</kbd>      | Split Buffer Orthogonaly            |
+| <kbd>Ctrl + B</kbd> <kbd>Ctrl + =</kbd>      | Split Buffer Orthogonaly            |
 | <kbd>Ctrl + B</kbd> <kbd>Right</kbd>         | Move To Right Buffer                |
 | <kbd>Ctrl + B</kbd> <kbd>Left</kbd>          | Move To Left Buffer                 |
 | <kbd>Ctrl + B</kbd> <kbd>Up</kbd>            | Move To Top Buffer                  |
@@ -118,7 +118,43 @@ Navigate vertically in your code using <kbd>Ctrl + Up</kbd> and <kbd>Ctrl + Down
 
 > PS.: This is generally more flexible than using VS Code symbols because you don't need an external provider and you can configure your own rules.
 
-## Extensions pairings
+# Keyboard Layout
+
+This extensions uses [layout independent bingings](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-layoutindependent-bindings).
+If by any means you have problems with your keyboard layout, you can customize the shortucts in your user profile. 
+
+**An example of OEM bingings for a ABNT2 keyboard**
+
+> Only remap if the shortcuts are not properly recognized by your system
+
+```json
+{
+  "key": "ctrl+shift+oem_6",
+  "command": "editor.fold"
+},
+{
+  "key": "ctrl+shift+oem_5",
+  "command": "editor.unfold"
+},
+{
+  "key": "ctrl+oem_6",
+  "command": "editor.action.indentLines"
+},
+{
+  "key": "ctrl+oem_5",
+  "command": "editor.action.outdentLines"
+},
+{
+  "key": "ctrl+b ctrl+oem_plus",
+  "command": "workbench.action.splitEditorOrthogonal"
+},
+{
+  "key": "ctrl+b ctrl+oem_minus",
+  "command": "workbench.action.splitEditorDown"
+}
+```
+
+# Extensions pairings
 
 - [Code Flea](https://marketplace.visualstudio.com/items?itemName=Richibansoft.codeflea): To speed up even more your code navigation
 

@@ -114,12 +114,12 @@
         "when": "editorFocus"
       },
       {
-        "key": "ctrl+b ctrl+oem_plus",
+        "key": "ctrl+b ctrl+[Equal]",
         "command": "workbench.action.splitEditorOrthogonal",
         "when": "editorFocus"
       },
       {
-        "key": "ctrl+b ctrl+oem_minus",
+        "key": "ctrl+b ctrl+[Minus]",
         "command": "workbench.action.splitEditorDown",
         "when": "editorFocus"
       },
@@ -192,22 +192,22 @@
         "when": "terminalFocus"
       },
       {
-        "key": "ctrl+shift+oem_6",
+        "key": "ctrl+shift+[BracketRight]",
         "command": "editor.fold",
         "when": "editorFocus"
       },
       {
-        "key": "ctrl+shift+oem_5",
+        "key": "ctrl+shift+[BracketLeft]",
         "command": "editor.unfold",
         "when": "editorFocus"
       },
       {
-        "key": "ctrl+oem_6",
+        "key": "ctrl+[BracketRight]",
         "command": "editor.action.indentLines",
         "when": "editorTextFocus && !editorReadonly"
       },
       {
-        "key": "ctrl+oem_5",
+        "key": "ctrl+[BracketLeft]",
         "command": "editor.action.outdentLines",
         "when": "editorTextFocus && !editorReadonly"
       },
