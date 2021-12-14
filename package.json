@@ -445,6 +445,22 @@
         "mac": "cmd+g shift+s",
         "command": "cursorHome",
         "when": "textInputFocus"
+      },
+      {
+        "key": "ctrl+r",
+        "mac": "cmd+r",
+        "command": "editor.action.startFindReplaceAction",
+        "when": "editorFocus || editorIsOpen"
+      },
+      {
+        "key": "ctrl+shift+r",
+        "mac": "cmd+shift+r",
+        "command": "workbench.action.replaceInFiles"
+      },
+      {
+        "key": "ctrl+h h",
+        "mac": "cmd+h h",
+        "command": "code-flow.paragraphExpandSelection"
       }
     ],
     "configuration": {

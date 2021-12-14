@@ -90,6 +90,12 @@ Most of the new commands/ chords will be located in a specific scope like:
 | <kbd>Ctrl + L</kbd> <kbd>Delete</kbd>    | Delete everything To The Right            |
 | <kbd>Ctrl + L</kbd> <kbd>Backspace</kbd> | Delete everything To The Left             |
 
+## Paragraph
+
+| Shortcut                                 | Command                                   |
+|------------------------------------------|-------------------------------------------|
+| <kbd>Ctrl + H</kbd> <kbd>H</kbd>         | Expand Selection To Paragraph             |
+
 ## Movement
 
 | Shortcut                                    | Command                                |
