@@ -95,6 +95,10 @@ Most of the new commands/ chords will be located in a specific scope like:
 | Shortcut                                 | Command                                   |
 |------------------------------------------|-------------------------------------------|
 | <kbd>Ctrl + H</kbd> <kbd>H</kbd>         | Expand Selection To Paragraph             |
+| <kbd>Ctrl + H</kbd> <kbd>S</kbd>         | Expand Selection To Paragraph             |
+| <kbd>Ctrl + H</kbd> <kbd>Shift + S</kbd> | Expand Selection To Paragraph             |
+| <kbd>Ctrl + H</kbd> <kbd>E</kbd>         | Expand Selection To Paragraph             |
+| <kbd>Ctrl + H</kbd> <kbd>Shift + E</kbd> | Expand Selection To Paragraph             |
 
 ## Movement
 

@@ -52,6 +52,22 @@
       {
         "command": "code-flow.paragraphExpandSelection",
         "title": "Code Flow: Expand Selection To Paragraph"
+      },
+      {
+        "command": "code-flow.paragraphMoveStart",
+        "title": "Code Flow: Move To Paragraph Start"
+      },
+      {
+        "command": "code-flow.paragraphSelectStart",
+        "title": "Code Flow: Select To Paragraph Start"
+      },
+      {
+        "command": "code-flow.paragraphMoveEnd",
+        "title": "Code Flow: Move To Paragraph End"
+      },
+      {
+        "command": "code-flow.paragraphSelectEnd",
+        "title": "Code Flow: Select To Paragraph End"
       }
     ],
     "keybindings": [
@@ -461,6 +477,26 @@
         "key": "ctrl+h h",
         "mac": "cmd+h h",
         "command": "code-flow.paragraphExpandSelection"
+      },
+      {
+        "key": "ctrl+h s",
+        "mac": "cmd+h s",
+        "command": "code-flow.paragraphMoveStart"
+      },
+      {
+        "key": "ctrl+h shift+s",
+        "mac": "cmd+h shift+s",
+        "command": "code-flow.paragraphSelectStart"
+      },
+      {
+        "key": "ctrl+h e",
+        "mac": "cmd+h e",
+        "command": "code-flow.paragraphMoveEnd"
+      },
+      {
+        "key": "ctrl+h shift+e",
+        "mac": "cmd+h shift+e",
+        "command": "code-flow.paragraphSelectEnd"
       }
     ],
     "configuration": {

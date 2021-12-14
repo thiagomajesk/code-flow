@@ -70,3 +70,47 @@ export function paragraphExpandSelection(textEditor: vscode.TextEditor): void {
 
   textEditor.revealRange(new vscode.Range(newSelection.start, newSelection.end))
 }
+
+/**
+ * Move to the start of the current text paragraph.
+ * @param textEditor A VS Code TextEditor
+ * @param selectText If text should be selected when moving or not
+ */
+export function paragraphMoveStart(textEditor: vscode.TextEditor, selectText: boolean) : void {
+  const document = textEditor.document
+  const anchor = textEditor.selection.anchor
+
+  let prev = blankLineUp(textEditor)
+  let prevLine = textEditor.document.lineAt(prev.line)
+
+  if (prevLine.isEmptyOrWhitespace) prevLine = lineAtSafe(prev.line + 1, document)
+  let start = new vscode.Position(prevLine.lineNumber, prevLine.firstNonWhitespaceCharacterIndex)
+
+  let newSelection = new vscode.Selection(selectText ? anchor : start, start)
+
+  textEditor.selection = newSelection
+
+  textEditor.revealRange(new vscode.Range(newSelection.start, newSelection.end))
+}
+
+/**
+ * Move to the end of the current text paragraph.
+ * @param textEditor A VS Code TextEditor
+ * @param selectText If text should be selected when moving or not
+ */
+export function paragraphMoveEnd(textEditor: vscode.TextEditor, selectText: boolean) : void {
+  const document = textEditor.document
+  const anchor = textEditor.selection.anchor
+
+  let next = blankLineDown(textEditor)
+  let nextLine = textEditor.document.lineAt(next.line)
+
+  if (nextLine.isEmptyOrWhitespace) nextLine = lineAtSafe(next.line - 1, document)
+  let end = new vscode.Position(nextLine.lineNumber, nextLine.text.length)
+
+  let newSelection = new vscode.Selection(selectText ? anchor : end, end)
+
+  textEditor.selection = newSelection
+
+  textEditor.revealRange(new vscode.Range(newSelection.start, newSelection.end))
+}
