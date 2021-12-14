@@ -34,20 +34,24 @@
   "contributes": {
     "commands": [
       {
-        "command": "code-flow.smartTravelUp",
-        "title": "Code Flow: Smart Travel Up"
+        "command": "code-flow.paragraphMoveUp",
+        "title": "Code Flow: Move By Paragraph Up"
       },
       {
-        "command": "code-flow.smartTravelDown",
-        "title": "Code Flow: Smart Travel Down"
+        "command": "code-flow.paragraphMoveDown",
+        "title": "Code Flow: Move By Paragraph Down"
       },
       {
-        "command": "code-flow.smartSelectUp",
-        "title": "Code Flow: Smart Select Up"
+        "command": "code-flow.paragraphSelectUp",
+        "title": "Code Flow: Select By Paragraph Up"
       },
       {
-        "command": "code-flow.smartSelectDown",
-        "title": "Code Flow: Smart Select Down"
+        "command": "code-flow.paragraphSelectDown",
+        "title": "Code Flow: Select By Paragraph Down"
+      },
+      {
+        "command": "code-flow.paragraphExpandSelection",
+        "title": "Code Flow: Expand Selection To Paragraph"
       }
     ],
     "keybindings": [
@@ -295,25 +299,25 @@
       {
         "key": "ctrl+up",
         "mac": "cmd+up",
-        "command": "code-flow.smartTravelUp",
+        "command": "code-flow.paragraphMoveUp",
         "when": "editorTextFocus"
       },
       {
         "key": "ctrl+down",
         "mac": "cmd+down",
-        "command": "code-flow.smartTravelDown",
+        "command": "code-flow.paragraphMoveDown",
         "when": "editorTextFocus"
       },
       {
         "key": "ctrl+shift+up",
         "mac": "cmd+shift+up",
-        "command": "code-flow.smartSelectUp",
+        "command": "code-flow.paragraphSelectUp",
         "when": "editorTextFocus"
       },
       {
         "key": "ctrl+shift+down",
         "mac": "cmd+shift+down",
-        "command": "code-flow.smartSelectDown",
+        "command": "code-flow.paragraphSelectDown",
         "when": "editorTextFocus"
       },
       {
