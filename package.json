@@ -33,6 +33,10 @@
   "contributes": {
     "commands": [
       {
+        "command": "code-flow.toggleMode",
+        "title": "Code Flow: Toggle Mode"
+      },
+      {
         "command": "code-flow.paragraphMoveUp",
         "title": "Code Flow: Move By Paragraph Up"
       },
@@ -71,9 +75,13 @@
     ],
     "keybindings": [
       {
+        "key": "escape",
+        "command": "code-flow.toggleMode"
+      },
+      {
         "key": "ctrl+k ctrl+e",
         "mac": "cmd+k cmd+e",
-        "command": "workbench.view.explorer"
+        "command": "workbench.view.explorer"        
       },
       {
         "key": "ctrl+k ctrl+f",
@@ -497,22 +505,7 @@
         "mac": "cmd+h shift+e",
         "command": "code-flow.paragraphSelectEnd"
       }
-    ],
-    "configuration": {
-      "title": "Code Flow Configuration",
-      "type": "object",
-      "properties": {
-        "code-flow.languageMarks": {
-          "type": "object",
-          "description": "Language Marks Definition",
-          "default": {
-            "typescript": [
-              "^(switch|if|else|var|module|public|private|enum|export|for|while|return|function|try|catch|return|yield|const)"
-            ]
-          }
-        }
-      }
-    }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
