@@ -13,7 +13,7 @@
     "url": "https://github.com/thiagomajesk/code-flow"
   },
   "engines": {
-    "vscode": "^1.72.0"
+    "vscode": "^1.98.0"
   },
   "categories": [
     "Keymaps",
@@ -29,7 +29,24 @@
   "activationEvents": [
     "onStartupFinished"
   ],
-  "main": "./out/extension.js",
+  "main": "./dist/extension.js",
+  "scripts": {
+    "compile": "tsc --noEmit && esbuild src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node",
+    "watch": "esbuild src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node --sourcemap --watch",
+    "vscode:prepublish": "esbuild src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node --minify",
+    "package": "npx @vscode/vsce package",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "20.x",
+    "@types/vscode": "^1.98.0",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "@vscode/vsce": "^3.6.0",
+    "esbuild": "^0.21.0",
+    "eslint": "^8.24.0",
+    "typescript": "^5.5.0"
+  },
   "contributes": {
     "commands": [
       {
@@ -81,7 +98,7 @@
       {
         "key": "ctrl+k ctrl+e",
         "mac": "cmd+k cmd+e",
-        "command": "workbench.view.explorer"        
+        "command": "workbench.view.explorer"
       },
       {
         "key": "ctrl+k ctrl+f",
@@ -506,26 +523,5 @@
         "command": "code-flow.paragraphSelectEnd"
       }
     ]
-  },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
-  },
-  "devDependencies": {
-    "@types/vscode": "^1.72.0",
-    "@types/glob": "^8.0.0",
-    "@types/mocha": "^10.0.0",
-    "@types/node": "16.x",
-    "@typescript-eslint/eslint-plugin": "^5.38.1",
-    "@typescript-eslint/parser": "^5.38.1",
-    "eslint": "^8.24.0",
-    "glob": "^8.0.3",
-    "mocha": "^10.0.0",
-    "typescript": "^4.8.4",
-    "@vscode/test-electron": "^2.1.5"
   }
 }

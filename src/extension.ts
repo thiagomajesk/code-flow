@@ -1,8 +1,8 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-import * as vscode from 'vscode'
+import * as vscode from 'vscode';
 
-import { paragraphMoveUp, paragraphMoveDown, paragraphExpandSelection, paragraphMoveStart, paragraphMoveEnd } from './commands/paragraph'
+import { paragraphMoveUp, paragraphMoveDown, paragraphExpandSelection, paragraphMoveStart, paragraphMoveEnd } from './commands/paragraph';
 
 import { StatusBar } from './extension/status-bar';
 
@@ -24,7 +24,7 @@ export function activate(context: vscode.ExtensionContext) {
     vscode.commands.registerTextEditorCommand('code-flow.paragraphSelectStart', (textEditor: vscode.TextEditor) => paragraphMoveStart(textEditor, true)),
     vscode.commands.registerTextEditorCommand('code-flow.paragraphMoveEnd', (textEditor: vscode.TextEditor) => paragraphMoveEnd(textEditor, false)),
     vscode.commands.registerTextEditorCommand('code-flow.paragraphSelectEnd', (textEditor: vscode.TextEditor) => paragraphMoveEnd(textEditor, true))
-  ]
+  ];
 
   context.subscriptions.push(...commands);
 }

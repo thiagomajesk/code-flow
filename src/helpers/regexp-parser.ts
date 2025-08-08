@@ -1,5 +1,5 @@
 function parseOrNull(str: string): RegExp | null {
-  try { return new RegExp(str) } catch (e) { return null }
+  try { return new RegExp(str); } catch (e) { return null; }
 }
 
 /**
@@ -8,5 +8,5 @@ function parseOrNull(str: string): RegExp | null {
  * @return List of valid RegExp or empty if there's no valid expressions.
  */
 export default function parse(items: string[]) : any {
-  return items.map(str => parseOrNull(str)).filter(r => r != null)
+  return items.map(str => parseOrNull(str)).filter(r => r != null);
 }
